@@ -4,5 +4,5 @@ def nyc_pigeon_organizer(data)
   # write your code here!
 end
 
-string = ":purple"
-nyc_pigeon_organizer(:string)
+s = ":purple"
+nyc_pigeon_organizer(:s)
