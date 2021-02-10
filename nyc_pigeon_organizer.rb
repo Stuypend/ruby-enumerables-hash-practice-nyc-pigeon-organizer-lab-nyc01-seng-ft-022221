@@ -1,8 +1,16 @@
 def nyc_pigeon_organizer(data)
-  hash = {:purple => ["Theo", "Peter Jr.", "Lucky"]}
-  puts hash[data]
+  name = []
+  data.each_with_object({}) do |(key, value), output|
+    value.each do |inner_key_color, names|
+      names.each do |n|
+        if(name.find_index(n) == nil)
+          name.push(n)
+        end
+      end
+    end
+  end
+
   # write your code here!
 end
 
-s = :purple
-nyc_pigeon_organizer(s)
+puts :people.to_s
